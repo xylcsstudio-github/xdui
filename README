@@ -1,0 +1,11 @@
+XDUI XYLCS DEVELOPER USER INTERFACE
+-----------------------------------
+Welcome!
+This is a lib that can help you to create a user interface for your appication with UI elements.
+
+For more information, please visit ./docs
+
+[IMPORTANT]
+- For MSVC++ 19.XX.XXXX
+- ONLY WINDOWS 8 OR LATER
+- This project uses Visual Studio 2026
