@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="xdui.vcxproj" Id="f276b2fb-e0a4-4e4c-bad2-106e93b158c1" />
+</Solution>
