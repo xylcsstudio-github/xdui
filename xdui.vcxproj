@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\ExampleWindow.cpp" />
     <ClCompile Include="src\libsrc\UIEle.cpp" />
     <ClCompile Include="src\libsrc\Window.cpp" />
-    <ClCompile Include="src\test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\include\UIEle.h" />
