@@ -1,0 +1,10 @@
+置顶Notes
+    主分支为main、dev
+    在日常开发中允许使用其他语言，但在推送向主分支前，必须翻译回英语
+    在每次推送向主分支前，必须把一些笔记或者文档中必要的的非英文部分翻译过来
+    如果有任何需要在项目中记下来的，可以写在这里，每次按日期由晚到早排序
+Pinned Notes
+    The main branches are main and dev
+    Other languages are allowed during daily development, but everything must be translated back to English before pushing to the main branches
+    Before each push to the main branches, necessary non-English parts in notes or documents must be translated to English
+    If there is anything that needs to be recorded for the project, it can be written here, sorted by date from newest to oldest each time
