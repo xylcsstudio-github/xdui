@@ -47,43 +47,43 @@ protected:
 
 public:
     UIEle();
-    virtual ~UIEle();
+    ~UIEle();
 
     // Drawing method
-    virtual void Draw(HDC hdc) = 0;
+    void Draw(HDC hdc);
   
     // Mouse event handlers
-    virtual void OnMouseMove(int x, int y) = 0;
-    virtual void OnMouseDown(int x, int y) = 0;
-    virtual void OnMouseUp(int x, int y) = 0;
-    virtual void OnMouseLeave() = 0;
-    virtual void OnMouseEnter() = 0;
-    virtual void OnMouseWheel(int x, int y, int delta) = 0;
-    virtual void OnLButtonDblClk(int x, int y) = 0;
-    virtual void OnRButtonDown(int x, int y) = 0;
-    virtual void OnRButtonUp(int x, int y) = 0;
-    virtual void OnMButtonDown(int x, int y) = 0;
-    virtual void OnMButtonUp(int x, int y) = 0;
-    virtual void OnMButtonDblClk(int x, int y) = 0;
-    virtual void OnXButtonDown(int x, int y, int button) = 0;
-    virtual void OnXButtonUp(int x, int y, int button) = 0;
-    virtual void OnXButtonDblClk(int x, int y, int button) = 0;
-    virtual void OnMouseHWheel(int x, int y, int delta) = 0;
+    void OnMouseMove(int x, int y);
+    void OnMouseDown(int x, int y);
+    void OnMouseUp(int x, int y);
+    void OnMouseLeave();
+    void OnMouseEnter();
+    void OnMouseWheel(int x, int y, int delta);
+    void OnLButtonDblClk(int x, int y);
+    void OnRButtonDown(int x, int y);
+    void OnRButtonUp(int x, int y);
+    void OnMButtonDown(int x, int y);
+    void OnMButtonUp(int x, int y);
+    void OnMButtonDblClk(int x, int y);
+    void OnXButtonDown(int x, int y, int button);
+    void OnXButtonUp(int x, int y, int button);
+    void OnXButtonDblClk(int x, int y, int button);
+    void OnMouseHWheel(int x, int y, int delta);
   
     // Keyboard event handlers
-    virtual void OnKeyDown(int key) = 0;
-    virtual void OnKeyUp(int key) = 0;
-    virtual void OnChar(char ch) = 0;
+    void OnKeyDown(int key);
+    void OnKeyUp(int key);
+    void OnChar(char ch);
   
     // Focus event handlers
-    virtual void OnFocus() = 0;
-    virtual void OnKillFocus() = 0;
-    virtual void OnSetFocus() = 0;
+    void OnFocus();
+    void OnKillFocus();
+    void OnSetFocus();
   
     // Other event handlers
-    virtual void OnCaptureChanged() = 0;
-    virtual void OnTimer(int id) = 0;
-    virtual void OnSize(int w, int h) = 0;
+    void OnCaptureChanged();
+    void OnTimer(int id);
+    void OnSize(int w, int h);
 
     // Position and size management
     void SetPos(int x, int y, int w, int h);
@@ -133,21 +133,21 @@ enum class UIVisibility {
 };
 ```
 
-## Pure Virtual Methods
+## Pure Methods
 
-The `UIEle` class defines several pure virtual methods that must be implemented by all derived classes:
+The `UIEle` class defines several pure methods that must be implemented by all derived classes:
 
 ### Drawing Method
 
 ```cpp
-virtual void Draw(HDC hdc) = 0;
+void Draw(HDC hdc);
 ```
 
 This method is responsible for rendering the UI element. Derived classes must implement this method to define how their element appears on screen.
 
 ### Event Handling Methods
 
-The class provides a comprehensive set of pure virtual methods for handling various user interactions:
+The class provides a comprehensive set of pure methods for handling various user interactions:
 
 - **Mouse Events**: Movement, clicks, wheel movements, etc.
 - **Keyboard Events**: Key presses, character input, etc.
@@ -198,7 +198,7 @@ bool IsFocused() const;
 
 ## Creating Custom UI Elements
 
-To create a custom UI element, derive from `UIEle` and implement all pure virtual methods:
+To create a custom UI element, derive from `UIEle` and implement all pure methods:
 
 ```cpp
 #include "include/UIEle.h"
@@ -238,7 +238,7 @@ public:
     }
   
     // Implement other required methods...
-    // (All pure virtual methods must be implemented)
+    // (All pure methods must be implemented)
 };
 ```
 
@@ -293,43 +293,43 @@ protected:
 
 public:
     UIEle();
-    virtual ~UIEle();
+    ~UIEle();
 
     // 绘制方法
-    virtual void Draw(HDC hdc) = 0;
+    void Draw(HDC hdc);
   
     // 鼠标事件处理程序
-    virtual void OnMouseMove(int x, int y) = 0;
-    virtual void OnMouseDown(int x, int y) = 0;
-    virtual void OnMouseUp(int x, int y) = 0;
-    virtual void OnMouseLeave() = 0;
-    virtual void OnMouseEnter() = 0;
-    virtual void OnMouseWheel(int x, int y, int delta) = 0;
-    virtual void OnLButtonDblClk(int x, int y) = 0;
-    virtual void OnRButtonDown(int x, int y) = 0;
-    virtual void OnRButtonUp(int x, int y) = 0;
-    virtual void OnMButtonDown(int x, int y) = 0;
-    virtual void OnMButtonUp(int x, int y) = 0;
-    virtual void OnMButtonDblClk(int x, int y) = 0;
-    virtual void OnXButtonDown(int x, int y, int button) = 0;
-    virtual void OnXButtonUp(int x, int y, int button) = 0;
-    virtual void OnXButtonDblClk(int x, int y, int button) = 0;
-    virtual void OnMouseHWheel(int x, int y, int delta) = 0;
+    void OnMouseMove(int x, int y);
+    void OnMouseDown(int x, int y);
+    void OnMouseUp(int x, int y);
+    void OnMouseLeave();
+    void OnMouseEnter();
+    void OnMouseWheel(int x, int y, int delta);
+    void OnLButtonDblClk(int x, int y);
+    void OnRButtonDown(int x, int y);
+    void OnRButtonUp(int x, int y);
+    void OnMButtonDown(int x, int y);
+    void OnMButtonUp(int x, int y);
+    void OnMButtonDblClk(int x, int y);
+    void OnXButtonDown(int x, int y, int button);
+    void OnXButtonUp(int x, int y, int button);
+    void OnXButtonDblClk(int x, int y, int button);
+    void OnMouseHWheel(int x, int y, int delta);
   
     // 键盘事件处理程序
-    virtual void OnKeyDown(int key) = 0;
-    virtual void OnKeyUp(int key) = 0;
-    virtual void OnChar(char ch) = 0;
+    void OnKeyDown(int key);
+    void OnKeyUp(int key);
+    void OnChar(char ch);
   
     // 焦点事件处理程序
-    virtual void OnFocus() = 0;
-    virtual void OnKillFocus() = 0;
-    virtual void OnSetFocus() = 0;
+    void OnFocus();
+    void OnKillFocus();
+    void OnSetFocus();
   
     // 其他事件处理程序
-    virtual void OnCaptureChanged() = 0;
-    virtual void OnTimer(int id) = 0;
-    virtual void OnSize(int w, int h) = 0;
+    void OnCaptureChanged();
+    void OnTimer(int id);
+    void OnSize(int w, int h);
 
     // 位置和尺寸管理
     void SetPos(int x, int y, int w, int h);
@@ -386,7 +386,7 @@ UIEle类定义了几个必须由所有派生类实现的纯虚方法：
 ### 绘制方法
 
 ```cpp
-virtual void Draw(HDC hdc) = 0;
+void Draw(HDC hdc);
 ```
 
 该方法负责渲染UI元素。派生类必须实现此方法来定义其元素在屏幕上的外观。
