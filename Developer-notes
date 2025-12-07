@@ -8,3 +8,6 @@ Pinned Notes
     Other languages are allowed during daily development, but everything must be translated back to English before pushing to the main branches
     Before each push to the main branches, necessary non-English parts in notes or documents must be translated to English
     If there is anything that needs to be recorded for the project, it can be written here, sorted by date from newest to oldest each time
+
+2025.12.7
+Now add a new dir to store test program pictures, "docs/.tstpic"

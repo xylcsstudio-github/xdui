@@ -19,13 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\ExampleWindow.cpp" />
-    <ClCompile Include="src\libsrc\UIEle.cpp" />
-    <ClCompile Include="src\libsrc\Window.cpp" />
+    <ClInclude Include="src\xdui\Text.h" />
+    <ClInclude Include="src\xdui\UIEle.h" />
+    <ClInclude Include="src\xdui\Window.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\include\UIEle.h" />
-    <ClInclude Include="src\include\Window.h" />
+    <ClCompile Include="src\ExampleWindow.cpp" />
+    <ClCompile Include="src\xdui\.libsrc\UIEle.cpp" />
+    <ClCompile Include="src\xdui\.libsrc\Window.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
